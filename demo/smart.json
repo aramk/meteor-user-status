@@ -3,7 +3,7 @@
     "mizzao:timesync": {
       "path": "../../mizzao:timesync"
     },
-    "mizzao:user-status": {
+    "aramk:user-status": {
       "path": ".."
     }
   }

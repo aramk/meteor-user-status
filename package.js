@@ -1,16 +1,16 @@
 Package.describe({
-  name: "mizzao:user-status",
+  name: "aramk:user-status",
   summary: "User connection and idle state tracking for Meteor",
-  version: "0.6.7",
-  git: "https://github.com/mizzao/meteor-user-status.git"
+  version: "1.0.0",
+  git: "https://github.com/aramk/meteor-user-status.git"
 });
 
 Package.onUse( function(api) {
-  api.versionsFrom("1.2.0.1");
+  api.versionsFrom('METEOR@1.6.1');
 
   api.use('accounts-base');
   api.use('check');
-  api.use(['coffeescript', 'underscore']);
+  api.use(['coffeescript@2.2.1_1', 'underscore']);
   api.use('mongo');
 
   api.use('deps', 'client');
@@ -27,7 +27,7 @@ Package.onUse( function(api) {
 });
 
 Package.onTest( function(api) {
-  api.use('mizzao:user-status');
+  api.use('aramk:user-status');
   api.use('mizzao:timesync');
 
   api.use(['accounts-base', 'accounts-password']);
